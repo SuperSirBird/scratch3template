@@ -18,7 +18,7 @@ var scratchblocks = document.getElementsByClassName("blocklyDraggable");
 var lengthupdate = 0;
 
 
-object.onmouseup = function(){
+document.body.onmouseup = function(){
     if (scratchblocks.length == lengthupdate) {
       // Wait
     } else {
