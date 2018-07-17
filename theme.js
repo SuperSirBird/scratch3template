@@ -1,13 +1,12 @@
-// Theme3.0 by @Raytracing
+// 3.0 Theme by @RAYTRACING WIP
 
-// Copy and paste this code into the console on the scratch 3.0 website inside editor.
 
 var defs = document.getElementsByClassName("blocklySvg")[0].children[0].innerHTML;
 
 var filter = " \
     <filter id='blockfilter' filterUnits='objectBoundingBox' x='-10%' y='-10%' width='150%' height='150%'> \
 		<feGaussianBlur in='SourceAlpha' stdDeviation='0.5' result='blur'/> \
-		<feSpecularLighting in='blur' surfaceScale='4' specularConstant='0.5' specularExponent='34' result='specOut' lighting-color='white'> \
+		<feSpecularLighting in='blur' surfaceScale='3' specularConstant='2.2' specularExponent='45' result='specOut' lighting-color='white'> \
 			<fePointLight x='-5000' y='-5000' z='8000'/> \
 		</feSpecularLighting> \
 		<feComposite in='specOut' in2='SourceAlpha' operator='in' result='specOut2'/> \
@@ -21,22 +20,5 @@ var filter = " \
 	</filter>"
 
 document.getElementsByClassName("blocklySvg")[0].children[0].innerHTML = defs + filter;
-
-var scratchblocks = document.getElementsByClassName("blocklyDraggable");
-
-
-var lengthupdate = 0;
-
-
-document.body.onmouseup = function(){
-    if (scratchblocks.length == lengthupdate) {
-      // Wait
-    } else {
-  
-    for (i=0;i<scratchblocks.length;i++) {
-      scratchblocks[i].setAttribute("filter", "url(#blockfilter)");
-    }
-  
-  lengthupdate =  scratchblocks.length;}
-};
+document.getElementsByClassName("blocklyBlockCanvas")[0].setAttribute("filter", "url(#blockfilter)");
 
