@@ -1,8 +1,17 @@
-// 3.0 Theme by @RAYTRACING WIP
+// 3.0 Theme Template by @Raytracing
 
 var defs = document.getElementsByClassName("blocklySvg")[0].children[0].innerHTML;
 
-var filter1 = " \
+
+// REPLACE THE INNER CONTENTS OF THE VAR FILLER WITH YOUR FILTER
+// MORE INFO ON FILTERS: https://www.w3schools.com/graphics/svg_filters_intro.asp
+
+// MUST DO:
+
+// REMEMBER TO SET THE <filter id='blockfilter'> AND ALSO REPLACE ALL "s WITH 's OTHERWISE IT WILL NOT WORK!
+// FOR EVERY LINE OF THE VARIABLE PUT A \ AT THE END TO TELL IT TO GO TO THE NEXT LINE EXEPT FOR LAST LINE!
+
+var filter = " \
     <filter id='blockfilter' filterUnits='objectBoundingBox' x='-10%' y='-10%' width='150%' height='150%'> \
 		<feGaussianBlur in='SourceAlpha' stdDeviation='0.9' result='blur'/> \
 		<feSpecularLighting in='blur' surfaceScale='3' specularConstant='2' specularExponent='50' result='specOut' lighting-color='white'> \
@@ -18,7 +27,12 @@ var filter1 = " \
               0 0 0 1 0 '/> \
 	</filter>";
 
-document.getElementsByClassName("blocklySvg")[0].children[0].innerHTML = defs + filter1;
+
+// THIS WILL REGISTER FILTER INTO IT
+
+// Creates the filter tag in the definition
+document.getElementsByClassName("blocklySvg")[0].children[0].innerHTML = defs + filter;
+// This gives elements the filter tag
 document.getElementsByClassName("blocklyBlockCanvas")[0].setAttribute("filter", "url(#blockfilter)");
 document.getElementsByClassName("blocklyBlockCanvas")[1].setAttribute("filter", "url(#blockfilter)");
 
