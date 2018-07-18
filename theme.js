@@ -1,5 +1,7 @@
 // 3.0 Theme Template by @Raytracing
 
+// Copy + Paste this Userscript into the console (Ctrl+C + Ctrl+V)
+
 var defs = document.getElementsByClassName("blocklySvg")[0].children[0].innerHTML;
 
 
