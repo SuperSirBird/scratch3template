@@ -9,4 +9,4 @@ Before:
 
 After:
 
-![alt text](https://supersirbird.github.io/ignoreme/2.PNG "With glossy template") Adds glossy shading/shine washes color a bit
+![alt text](https://supersirbird.github.io/ignoreme/2.PNG "With glossy template") Adds glossy shading/shine & washes color a bit
