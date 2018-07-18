@@ -1,5 +1,5 @@
 # scratch3theme
-A JS userscript theme for scratch 3.0
+A JS userscript theme for scratch 3.0 (Userscript in theme.js)
 
 # What it looks like (Template)
 
