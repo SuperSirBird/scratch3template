@@ -1,6 +1,6 @@
 // 3.0 Theme Template by @Raytracing
 
-// Copy + Paste this WHOLE DOCUMENT into the console (Ctrl+C + Ctrl+V)
+// Copy + Paste this WHOLE DOCUMENT into the console (Ctrl+C + then go to scratch3 then Ctrl+Shift+J then Ctrl+V then Enter then close console)
 
 var defs = document.getElementsByClassName("blocklySvg")[0].children[0].innerHTML;
 
